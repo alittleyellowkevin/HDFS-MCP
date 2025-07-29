@@ -1,0 +1,21 @@
+{
+    "mcpServers": {
+        "hdfs-mcp-server": {
+            "command": "npx",
+            "args": [
+                "tsx",
+                "src/index.ts"
+            ],
+            "env": {
+                "HDFS_NAMESERVICES": "haclusterdev",
+                "HDFS_NAMENODES": "n1,n2",
+                "HDFS_RPC_N1": "1.hadoopdev.com:8020",
+                "HDFS_RPC_N2": "2.hadoopdev.com:8020",
+                "HDFS_HTTP_N1": "1.hadoopdev.com:8090",
+                "HDFS_HTTP_N2": "2.hadoopdev.com:8090",
+                "HDFS_USERNAME": "hadoop",
+                "NODE_ENV": "development"
+            }
+        }
+    }
+}
